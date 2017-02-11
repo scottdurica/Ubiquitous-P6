@@ -104,6 +104,11 @@ public class MyWatchFace extends CanvasWatchFaceService {
         }
     }
 
+    /*^
+     *  Credit to Udacity Forums and specifically this post (Receiving data from device to the wearable emulator) for
+     *  basic understanding of how to implement a DataListener to handle data transfer from app to wearlable.
+     */
+
     private class Engine extends CanvasWatchFaceService.Engine implements DataApi.DataListener{
         public final String LOG_TAG = Engine.class.getSimpleName();
         final Handler mUpdateTimeHandler = new EngineHandler(this);
